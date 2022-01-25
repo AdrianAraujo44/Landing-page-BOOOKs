@@ -132,7 +132,7 @@
   align-items: center;
   display: flex;
   border-radius: 40px;
-  background-color: #7B34E5;
+  /* background-color: #7B34E5; */
 }
 
 #play-icon-item {
@@ -157,7 +157,8 @@ figure { width: 90%; min-width: 17.5em; margin:0 auto;}
 }
 
 #image-video {
-  background-image: url('./img/womanTexting.jpg');
+  background-image: url('./img/womanSmiling.jpg');
+  /* background-image: url('./img/womanTexting.jpg'); */
   /* width: 700px;
   height: 400px; */
   width: 100%;
@@ -167,7 +168,7 @@ figure { width: 90%; min-width: 17.5em; margin:0 auto;}
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
-  border: 5px solid #c4c4c4;
+  box-shadow: 10px 10px 10px #c4c4c4;
 }
 
 /* liked-idea */
