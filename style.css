@@ -74,11 +74,6 @@
   margin-bottom: 150px;
 }
 
-#app-name {
-  color: #7B34E5;
-  font-weight: 600;
-}
-
 .about-icon {
   width: 100px;
   height: 100px;
@@ -211,7 +206,8 @@ figure { width: 90%; min-width: 17.5em; margin:0 auto;}
 
 .title {
   font-family: 'Montserrat', sans-serif;
-  color: #574e9a
+  font-weight: 300;
+  color: #7B34E5
 }
 
 .subtitle {
