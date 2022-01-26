@@ -19,7 +19,7 @@
 }
 @media (max-width: 990px){
   nav {
-      background-color: #353536!important;
+      background-color: #574e9a !important;
       padding: 1rem!important;
   }
   .nav-item {
@@ -96,6 +96,24 @@
 
 .card {
   border: none
+}
+
+/* gallery */
+#gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-gallery {
+  width: 16rem;
+  height: 500px;
+  object-fit: contain;
 }
 
 /* video section */
