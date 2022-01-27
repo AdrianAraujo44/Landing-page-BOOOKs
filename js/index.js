@@ -56,18 +56,21 @@ window.addEventListener('scroll', function () {
 })
 
 // send email to user 
-function sendEmail () {
+function sendEmail() {
   const name = document.getElementById('name').value
   const email = document.getElementById('email').value
-  const data = { name: name,email: email}
-  fetch("https://boooks-api.herokuapp.com/api/email/sendEmail", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data)
-  }).then(() => alert("Enviamos um email para você !"))
-  .catch((err) => {
-    console.log(err)
-  })
+  const data = { name: name, email: email }
+
+  if (name.trim().length > 0 && email.trim().length > 0) {
+    fetch("https://boooks-api.herokuapp.com/api/email/sendEmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data)
+    }).then(() => alert("Enviamos um email para você !"))
+      .catch((err) => {
+        console.log(err)
+      })
+  }
 }
