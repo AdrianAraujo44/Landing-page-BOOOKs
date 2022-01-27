@@ -137,7 +137,6 @@
       </div>
     </section>
     
-
     <section id="video-section">
       <div class="container">
         <div class="row justify-content-center">
@@ -148,7 +147,7 @@
               <div id="image-video">
                 <div id="overlay-image">
                   <div id="play-icon">
-                    <i id="play-icon-item" class="fas fa-play-circle" ></i>
+                    <i id="play-icon-item" class="fas fa-play-circle"></i>
                   </div>
                 </div>
                 </div>
@@ -164,16 +163,16 @@
         <div class="row justify-content-center align-item-center">
           <div class="col-md-5">
             <h1 class="title text-center">Gostou da ideia ?</h1>
-            <h2 class="subtitle">Experimente nosso app de maneira gratuita antes mesmo de ser lançado !</h2>
+            <h2 class="subtitle">Experimente nosso app de maneira gratuita antes mesmo de ser lançado ! enviaremos um email.</h2>
             <form>
               <div id="banner-input" class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Nome" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <input id="name" type="text" class="form-control" placeholder="Nome" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
               </div>
               <div id="banner-input" class="input-group input-group-lg">
-                <input type="text" class="form-control" placeholder="Seu melhor email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <input id="email" type="email" class="form-control" placeholder="Seu melhor email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
               </div>
               <div class="d-grid">
-                <button type="button" class="btn btn-danger  btn-lg">Quero experimentar</button>
+                <button type="button" onclick="sendEmail()" class="btn btn-danger btn-lg">Quero experimentar</button>
               </div>
             </form>
           </div>

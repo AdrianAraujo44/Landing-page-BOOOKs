@@ -54,3 +54,20 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('mx-auto')
   }
 })
+
+// send email to user 
+function sendEmail () {
+  const name = document.getElementById('name').value
+  const email = document.getElementById('email').value
+  const data = { name: name,email: email}
+  fetch("https://boooks-api.herokuapp.com/api/email/sendEmail", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data)
+  }).then(() => alert("Enviamos um email para você !"))
+  .catch((err) => {
+    console.log(err)
+  })
+}
